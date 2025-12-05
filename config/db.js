@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectDB = async () => {
   try {
-    await mongoose.connect("mongodb://127.0.0.1:27017/todoDB");
+    await mongoose.connect("mongodb+srv://prashantkumar4216_db_user:shinu123@cluster0.ohnrklb.mongodb.net/todoDB");
     console.log("MongoDB Connected");
   } catch (error) {
     console.log("DB Connection Error:", error);
@@ -10,3 +10,4 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB;
+
